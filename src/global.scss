@@ -1,0 +1,21 @@
+@import "~react-multi-carousel/lib/styles.css";
+
+.is-flex {
+  display: flex;
+}
+
+.is-flex-column {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.flex-one {
+  flex: 1;
+}
+
+.flex-half {
+  flex: 0.5;
+}

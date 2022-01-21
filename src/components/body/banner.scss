@@ -1,0 +1,91 @@
+$black: #000000;
+$white: #ffffff;
+
+$blue: rgba(0, 154, 198, 1);
+
+.banner-container {
+  background-color: $black;
+}
+
+.banner-logo {
+  padding: 0 225px;
+  align-items: center;
+  object-fit: contain;
+  margin: 0px 0px 90px;
+
+  @media screen and (max-width: 768px) {
+    padding: 25px 25px 0px;
+    margin: 0 auto 30px;
+
+    > img {
+      height: 235px;
+    }
+  }
+}
+
+.banner-right-content {
+  margin: auto 0px;
+  text-align: center;
+  max-width: 600px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+    line-height: 23px;
+    margin: 30px 30px 0px;
+  }
+
+  @media screen and (min-width: 1441px) {
+    max-width: 100%;
+  }
+
+  img {
+    padding: 0px 0px 30px;
+
+    &:first-child {
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0px;
+        width: 85%;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    color: $white;
+    font-size: 20px;
+    line-height: 28px;
+
+    strong {
+      font-size: 25px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 17px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+.banner-button {
+  text-align: center;
+
+  > button {
+    padding: 20px 25px 25px;
+    background-color: $blue;
+    color: $white;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    margin: 50px auto 40px;
+    border-radius: 3px;
+    border: none;
+
+    @media screen and (max-width: 768px) {
+      padding: 15px 20px 20px;
+      font-size: 15px;
+      margin-top: 20px;
+    }
+  }
+}

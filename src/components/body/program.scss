@@ -1,0 +1,140 @@
+$black: #000000;
+$white: #ffffff;
+
+$yellow: rgba(254, 192, 3, 0.8);
+$red: rgba(240, 83, 77, 1);
+
+.program-container {
+  text-align: center;
+  padding: 75px 240px 50px;
+  background-color: $yellow;
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    padding: 45px 30px 50px;
+    font-size: 30px;
+  }
+
+  > span {
+    font-style: italic;
+
+    @media screen and (max-width: 768px) {
+      font-style: normal;
+    }
+  }
+}
+
+.program-content {
+  margin-top: 30px;
+
+  > div:not(:first-child) {
+    @media screen and (min-width: 769px) {
+      margin-left: 50px;
+    }
+  }
+
+  > .left {
+    flex: 1;
+  }
+
+  > .right {
+    flex: 1;
+  }
+
+  p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $black;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+}
+
+.program-footer {
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+
+  .carousel-container {
+    height: 300px;
+  }
+
+  .carousel-number {
+    margin-left: -40px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .carousel-box {
+    padding: 20px;
+    border-radius: 3px;
+    width: 160px;
+    height: 160px;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    p {
+      width: 100%;
+      align-self: center;
+      text-align: center;
+    }
+
+    img {
+      object-fit: contain;
+      width: 70px;
+    }
+  }
+}
+
+.arrow-icon {
+  object-fit: contain;
+}
+
+.dots {
+  background-color: $black;
+  height: 16px;
+  margin: 0px 5px;
+  border-radius: 8px;
+}
+
+.dot-active {
+  opacity: 1;
+}
+
+.dot-inactive {
+  opacity: 0.25;
+}
+
+.react-multiple-carousel__arrow {
+  filter: invert(1);
+  bottom: -10px;
+  background-color: transparent !important;
+
+  &:disabled {
+    filter: invert(0.25);
+  }
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(25% + 1px) !important;width: 24px;
+  height: 15px;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(25% + 1px) !important;
+}

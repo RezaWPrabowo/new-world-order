@@ -1,0 +1,89 @@
+$black: #000000;
+$white: #ffffff;
+
+.session-container {
+  text-align: center;
+  padding: 75px 230px 60px;
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 700;
+  color: $black;
+
+  p {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 25px 30px;
+    font-size: 30px;
+  }
+}
+
+.session-content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    padding: 15px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 10px;
+
+    &:nth-child(n + 0):nth-child(-n + 5) {
+      @media screen and (min-width: 769px) {
+        margin-right: 30px;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+
+      &:first-child {
+        font-weight: 700;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    flex-wrap: wrap;
+    height: 435px;
+  }
+}
+
+.session-button {
+  margin-top: 60px;
+
+  button {
+    font-size: 20px;
+    font-weight: 900;
+    color: $white;
+    background-color: $black;
+    line-height: 24px;
+    padding: 20px 30px 25px;
+    border: none;
+    border-radius: 3px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

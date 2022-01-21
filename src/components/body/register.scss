@@ -1,0 +1,167 @@
+$black: #000000;
+$white: #ffffff;
+
+$blue: rgba(0, 153, 198, 0.9);
+
+.register-container {
+  background-color: $blue;
+  mix-blend-mode: normal;
+  padding: 100px 240px 60px;
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 25px;
+  }
+}
+
+.register-left-content {
+  padding: 0px 50px 0px 0px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+    color: $white;
+    font-size: 20px;
+    line-height: 28px;
+
+    &:first-child {
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 42px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 17px;
+      line-height: 23px;
+
+      &:first-child {
+        font-size: 30px;
+      }
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+.register-right-content {
+  text-align: left;
+  width: 100%;
+
+  > div {
+    &:not(:first-child):not(:last-child) {
+      margin: 10px auto;
+    }
+
+    > p {
+      margin: 0;
+      text-align: left;
+      color: $white;
+      font-size: 20px;
+      line-height: 28px;
+      align-self: center;
+      min-width: 150px;
+      width: 100%;
+
+      @media screen and (max-width: 768px) {
+        font-size: 17px;
+        line-height: 23px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  input {
+    padding-left: 10px;
+    padding-right: 0px;
+    border-radius: 3px;
+    border: none;
+    height: 60px;
+    font-size: 20px;
+    line-height: 28px;
+    width: calc(100% - 10px);
+    color: grey;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 40px;
+      font-size: 17px;
+      line-height: 23px;
+    }
+  }
+}
+
+.register-button {
+  text-align: center;
+
+  > button {
+    padding: 20px 25px 25px;
+    background-color: $blue;
+    color: $white;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    margin: 50px auto 40px;
+    border-radius: 3px;
+    border: none;
+
+    @media screen and (max-width: 768px) {
+      padding: 15px 20px 20px;
+      font-size: 15px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.register-right-footer {
+  margin-top: 15px;
+  align-self: center;
+
+  p {
+    margin: 0;
+    text-align: left;
+    text-decoration: underline;
+    color: $white;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+
+    &:first-child {
+      margin-bottom: 5px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 11px;
+      line-height: 17px;
+    }
+  }
+}
+
+.register-button {
+  margin-top: 15px;
+  background-color: $black;
+  border-radius: 3px;
+  border: none;
+  padding: 20px;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 20px;
+  color: $white;
+
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}

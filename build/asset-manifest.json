@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.64d3f975.css",
+    "main.js": "/static/js/main.c4b89534.js",
+    "static/media/logo-queensland.png": "/static/media/logo-queensland.a4a3736a0cc028cb64ad.png",
+    "static/media/logo-2032.png": "/static/media/logo-2032.39e66fb22ecae12cc68c.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "main.64d3f975.css.map": "/static/css/main.64d3f975.css.map",
+    "main.c4b89534.js.map": "/static/js/main.c4b89534.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64d3f975.css",
+    "static/js/main.c4b89534.js"
+  ]
+}
